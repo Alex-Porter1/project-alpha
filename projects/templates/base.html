@@ -19,6 +19,16 @@
                     <li>
                         <a href="{% url 'create_project' %}">Create a new project</a>
                     </li>
+                    <li>
+                        <a href="{% url 'signup' %}">Signup</a>
+                    </li>
+                    {% else %}
+                    <li>
+                        <a href="{% url 'signup' %}">Signup</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'login' %}">Login</a>
+                    </li>
                     {% endif %}
                 </ul>
             </nav>
