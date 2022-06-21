@@ -2,10 +2,12 @@
 {% block content %}
 <main>
     <div>
+        <li><a href="{% url 'create_project' %}">Create a project</a></li>
         <h1>My Projects</h1>
         {% if projectslist|length == 0 %}
             <p>You are not assigned to any projects</p>
         {% else %}
+        
         <table>
             <thead>
                 <tr>
