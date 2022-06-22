@@ -1,10 +1,10 @@
-from django.shortcuts import render
 from django.urls import reverse_lazy
 from projects.models import Project
 from django.views.generic.list import ListView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView
+
 # Create your views here.
 
 
